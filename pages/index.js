@@ -4,6 +4,7 @@ import Header from '../components/header'
 import HeroSection from '../components/heroSection'
 import RowSection from '../components/rowSection'
 import ClassesSection from '../components/classesSection'
+import RatingSection from '../components/rating'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection />
         <RowSection />
         <ClassesSection />
+        <RatingSection />
       </main>
 
       <footer>
