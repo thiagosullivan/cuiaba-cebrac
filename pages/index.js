@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Classes from '../components/Classes'
+
 import Header from '../components/header'
-import HeroSection from '../components/hero'
+import HeroSection from '../components/heroSection'
 import RowSection from '../components/rowSection'
+import ClassesSection from '../components/classesSection'
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <RowSection />
-        <Classes />
+        <ClassesSection />
       </main>
 
       <footer>

@@ -8,7 +8,7 @@ import Mcc from '../Mcc'
 import Pbb from '../Pbb'
 import { ClassesContainer } from './style'
 
-function Classes() {
+function ClassesSection() {
   return (
     <ClassesContainer>
       <Adm />
@@ -22,4 +22,4 @@ function Classes() {
   )
 }
 
-export default Classes
+export default ClassesSection
