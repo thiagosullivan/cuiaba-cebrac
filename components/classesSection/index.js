@@ -14,9 +14,9 @@ function ClassesSection() {
       <Adm />
       <Fmc />
       <Eng />
-      {/* <Cdd />
+      <Cdd />
       <Log />
-      <Mcc />
+      {/* <Mcc />
       <Pbb /> */}
     </ClassesContainer>
   )

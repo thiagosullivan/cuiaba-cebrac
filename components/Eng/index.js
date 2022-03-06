@@ -19,13 +19,13 @@ function Eng() {
       />
       <div className='class_info_bottom'>
         <AsideClass>
-          <AsideImage imgUrl='https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/img-farm.jpg'>
+          <AsideImage imgUrl='https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/img-eng.jpg'>
             <p>Fundamental e perfeito para o<br/>
             mercado de trabalho.</p>
             <p>Conheça mais <span>sobre o curso</span></p>
             <p>Com o CEBRAC no currículo é assim: você mais perto do mercado de trabalho e da realização dos seus sonhos. O CEBRAC conta com educadores especializados e uma metodologia de ensino diferenciada, garantindo uma formação pessoal e profissional de qualidade.</p>
           </AsideImage>
-          <iframe width="500" height="315" src="https://www.youtube.com/embed/pwN0WhCLuFM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe width="500" height="315" src="https://www.youtube.com/embed/U7D2Djr-Dx8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </AsideClass>
         <div className='class__container__info'>
           <div className='subtitle__eng'>

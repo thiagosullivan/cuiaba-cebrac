@@ -49,6 +49,7 @@ export const EngContainer = styled.section`
   
         h4 {
           margin-bottom: 0.6rem;
+          text-transform: uppercase;
         }
         p {
           max-width: 620px;

@@ -11,8 +11,7 @@ import ClassBottomInfos from '../classBottomInfos';
 import RowClassBottom from '../rowClassBottom';
 
 function Adm() {
-  console.log(classBottomInfos_adm_col1)
-  console.log(classBottomInfos_adm_col2)
+
   return (
     <AdmContainer id="adm">
       <TitleClass
