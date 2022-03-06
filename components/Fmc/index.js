@@ -11,7 +11,7 @@ import RowClassBottom from '../rowClassBottom';
 
 function Fmc() {
   return (
-    <FmcContainer>
+    <FmcContainer id="fmc">
       <TitleClass
         title="Atendente de Farmácia"
         imageUrl={fmcLogo}

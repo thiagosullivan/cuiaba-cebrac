@@ -12,7 +12,7 @@ import RowClassBottom from '../rowClassBottom';
 
 function Mcc() {
   return (
-    <MccContainer>
+    <MccContainer id="mcc">
       <TitleClass
         title="Manutenção de Celulares e Computadores"
         imageUrl={mccLogo}

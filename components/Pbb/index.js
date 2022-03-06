@@ -12,7 +12,7 @@ import RowClassBottom from '../rowClassBottom';
 
 function Pbb() {
   return (
-    <PbbContainer>
+    <PbbContainer id="pbb">
       <TitleClass
         title="Profissional da Beleza e Bem Estar"
         imageUrl={pbbLogo}

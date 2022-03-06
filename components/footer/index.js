@@ -24,25 +24,25 @@ function FooterSection() {
           <ul>
             <p>Cursos</p>
             <li>
-              <a href="">Assistente Administrativo Completo</a>
+              <a href="#adm">Assistente Administrativo Completo</a>
               </li>
             <li>
-              <a href="">Atendente de Farmácia</a>
+              <a href="#fmc">Atendente de Farmácia</a>
               </li>
             <li>
-              <a href="">Cebrac English</a>
+              <a href="#eng">Cebrac English</a>
             </li>
             <li>
-              <a href="">Cuidador</a>
+              <a href="#cdd">Cuidador</a>
             </li>
             <li>
-              <a href="">Logística Completa</a>
+              <a href="#log">Logística Completa</a>
             </li>
             <li>
-              <a href="">Manutenção de Celulares<br/>
+              <a href="#mcc">Manutenção de Celulares<br/>
               e Computadores</a>
             </li>
-            <li><a href="">Profissional da Beleza</a>
+            <li><a href="#pbb">Profissional da Beleza</a>
             </li>
           </ul>
           <div className='footer__social_container'>

@@ -12,7 +12,7 @@ import RowClassBottom from '../rowClassBottom';
 
 function Log() {
   return (
-    <LogContainer>
+    <LogContainer id="log">
       <TitleClass
         title="Logística Completa"
         imageUrl={logLogo}
