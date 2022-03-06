@@ -6,8 +6,10 @@ const theme = {
   grayTwo: '#A1A1A1',
   blackOne: '#1F1F1F',
   yellowOne: '#FFCC29',
+  yellowTwo: '#F5A600',
   greenOne: '#61D445',
   greenTwo: '#A9CE46',
+  greenThree: '#46C2BC',
   redOne: '#FF0036',
 
 }

@@ -16,8 +16,8 @@ function ClassesSection() {
       <Eng />
       <Cdd />
       <Log />
-      {/* <Mcc />
-      <Pbb /> */}
+      <Mcc />
+      {/* <Pbb /> */}
     </ClassesContainer>
   )
 }
