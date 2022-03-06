@@ -19,7 +19,7 @@ function Fmc() {
       />
       <div className='class_info_bottom'>
         <AsideClass>
-          <AsideImage imgUrl='https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/img-adm.jpg'>
+          <AsideImage imgUrl='https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/img-farm.jpg'>
             <p>Fundamental e perfeito para o<br/>
             mercado de trabalho.</p>
             <p>Conheça mais <span>sobre o curso</span></p>

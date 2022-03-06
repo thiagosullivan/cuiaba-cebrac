@@ -23,6 +23,13 @@ export const RowClassContainer = styled.div`
       padding: 0.8rem 2.5rem;
       color: #ffffff;
       background-color: ${({ theme }) => theme.blackOne};
+      border: 2px solid ${({ theme }) => theme.blackOne};
+      transition: all 150ms ease-in;
+
+      &:hover {
+        background-color: transparent;
+        color: ${({ theme }) => theme.blackOne};
+      }
     }
   }
 `

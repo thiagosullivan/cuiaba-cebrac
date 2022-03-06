@@ -22,12 +22,12 @@ export const RowClassBottomContainer = styled.div`
         color: #ffffff;
         margin-left: 1rem;
         font-weight: bold;
+        max-width: 250px;
       }
     }
     .row_class_bottom_col2,
     .row_class_bottom_col3 {
       p {
-        max-width: 250px;
         margin-bottom: 0.5rem;
         text-transform: uppercase;
 
