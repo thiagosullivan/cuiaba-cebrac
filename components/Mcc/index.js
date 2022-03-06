@@ -1,18 +1,18 @@
 import React from 'react'
 import TitleClass from '../titleClass'
 
-import fmcLogo from '../../assets/fmc-logo.jpg'
-import { FmcContainer } from './style'
+import mccLogo from '../../assets/mcc-logo.jpg'
+import { MccContainer } from './style'
 
 function Mcc() {
   return (
-    <FmcContainer>
+    <MccContainer>
       <TitleClass
-        title="Atendente de Farmácia"
-        imageUrl={fmcLogo}
-        classCss="title__fmc"
+        title="Manutenção de Celulares e Computadores"
+        imageUrl={mccLogo}
+        classCss="title__mcc"
       />
-    </FmcContainer>
+    </MccContainer>
   )
 }
 

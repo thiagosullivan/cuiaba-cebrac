@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 
-export const FmcContainer = styled.section`
-  .title__fmc {
+export const EngContainer = styled.section`
+  .title__eng {
     color: ${({ theme }) => theme.greenOne};
   }
 `

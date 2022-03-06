@@ -2,13 +2,17 @@ import React from 'react'
 import Image from 'next/image';
 
 import TitleClass from '../titleClass'
-import { admData } from './adm-data';
+import { admData, classBottomInfos_adm_col1, classBottomInfos_adm_col2 } from './adm-data';
 import { AdmContainer, AsideClass, AsideImage } from './style'
 
 import admLogo from '../../assets/adm-logo_1.jpg'
+import RowClass from '../rowClass';
+import ClassBottomInfos from '../classBottomInfos';
+import RowClassBottom from '../rowClassBottom';
 
 function Adm() {
-  console.log(admData)
+  console.log(classBottomInfos_adm_col1)
+  console.log(classBottomInfos_adm_col2)
   return (
     <AdmContainer id="adm">
       <TitleClass
@@ -50,6 +54,69 @@ function Adm() {
           })}
         </div>
       </div>
+      <RowClass
+        classCss="row__adm"
+      />
+      <div className='ClassBottomInfos'>
+        <div className='ClassBottomInfos_cont'>
+          {classBottomInfos_adm_col1.map((data, index) => {
+            return (
+              <div className='BottomInfos__col1' key={index}>
+                <div className='BottomInfos__col1_img'>
+                  <Image
+                    src={data.itemIcon}
+                    width={120}
+                    height={100}
+                  />
+                </div>
+                <p>Incado <span>para</span></p>
+                <ul>
+                  <li>- {data.itemTextOne}</li>
+                  <li>- {data.itemTextTwo}</li>
+                  <li>- {data.itemTextThree}</li>
+                  <li>- {data.itemTextFour}</li>
+                  <li>- {data.itemTextFive}</li>
+                </ul>
+              </div>
+            )
+          })}
+          {classBottomInfos_adm_col2.map((data, index) => {
+            return (
+              <div className='BottomInfos__col2' key={index}>
+                <div className='BottomInfos__col2_img'>
+                  <Image
+                    src={data.itemIconTwo}
+                    width={120}
+                    height={100}
+                  />
+                </div>
+                <p>Grandes <span>diferenciais</span></p>
+                <ul>
+                  <li>- {data.itemTwoTextOne}</li>
+                  <li>- {data.itemTwoTextTwo}</li>
+                  <li>- {data.itemTwoTextThree}</li>
+                  <li>- {data.itemTwoTextFour}</li>
+                  <li>- {data.itemTwoTextFive}</li>
+                  <li>- {data.itemTwoTextSix}</li>
+                  <li>- {data.itemTwoTextSeven}</li>
+                  <li>- {data.itemTwoTextEight}</li>
+                </ul>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      <RowClassBottom
+        classCss="rowbottom__adm"
+        imageOneRow="https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/clock-white.png"
+        imageTwoRow="https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/work-white-1.png"
+        imageThreeRow="https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/shield-white.png"
+        colOneTxt="180 Horas"
+        colTwoTxtOne="Aprimore-se"
+        colTwoTxtTwo="Facilidades para fazer o seu curso, fortalecendo o aprendizado escolar e sua vida profissional."
+        colThreeTxtOne="Diferenciais"
+        colThreeTxtTwo="Aulas práticas com início imediato. Aulas presenciais com educador. Certificado com reconhecimento."
+      />
     </AdmContainer>
   )
 }

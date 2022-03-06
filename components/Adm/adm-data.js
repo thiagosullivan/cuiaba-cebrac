@@ -20,3 +20,28 @@ export const admData = [
     itemIcon: 'https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/adm-icone-4.png'
   }
 ]
+
+export const classBottomInfos_adm_col1 = [
+  {
+    itemTextOne: 'Facilitar a inserção no mercado de trabalho e auxiliar na conquista de melhores colocações profissionais;',
+    itemTextTwo: 'Aprimorar os conhecimentos nas áreas pessoal, comercial, administrativa e tecnológica;',
+    itemTextThree: 'Formação profissional completa, gerando um grande diferencial no currículo;',
+    itemTextFour: 'Adquirir conhecimentos para administrar seu próprio negócio;',
+    itemTextFive: 'Atuar em diversos setores de uma empresa.',
+    itemIcon: 'https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/icon-bag.png'
+  }
+]
+
+export const classBottomInfos_adm_col2 = [
+  {
+    itemTwoTextOne: 'Desenvolve a postura profissional proativa;',
+    itemTwoTextTwo: 'Fortalecimento dos valores pessoais e profissionais;',
+    itemTwoTextThree: 'Aulas presenciais com educador especializado;',
+    itemTwoTextFour: 'Compromisso Ecocidadão;',
+    itemTwoTextFive: 'Aprendizagem por projetos;',
+    itemTwoTextSix: 'Pronto para atuar com brilhantismo no mercado de trabalho;',
+    itemTwoTextSeven: 'Formação voltada para as exigências do mercado;',
+    itemTwoTextEight: 'E muito mais…',
+    itemIconTwo: 'https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/icon-shield.png'
+  }
+]

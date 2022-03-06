@@ -3,7 +3,7 @@ import { FormContainer } from './style'
 
 function FormHero() {
   return (
-    <FormContainer>
+    <FormContainer id="form">
       <input type="text" required placeholder="Seu Nome"/>
       <input type="text" required placeholder="Power Code"/>
       <input type="phone" required placeholder="Seu Telefone"/>

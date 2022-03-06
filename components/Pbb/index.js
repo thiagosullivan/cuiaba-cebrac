@@ -1,18 +1,18 @@
 import React from 'react'
 import TitleClass from '../titleClass'
 
-import fmcLogo from '../../assets/fmc-logo.jpg'
-import { FmcContainer } from './style'
+import pbbLogo from '../../assets/pbb-logo.jpg'
+import { PbbContainer } from './style'
 
 function Pbb() {
   return (
-    <FmcContainer>
+    <PbbContainer>
       <TitleClass
-        title="Atendente de Farmácia"
-        imageUrl={fmcLogo}
-        classCss="title__fmc"
+        title="Profissional da Beleza e Bem Estar"
+        imageUrl={pbbLogo}
+        classCss="title__pbb"
       />
-    </FmcContainer>
+    </PbbContainer>
   )
 }
 

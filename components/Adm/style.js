@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const AdmContainer = styled.section`
-
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto 5rem;
+  font-family: 'Work Sans', sans-serif;
 
   .title__adm {
     color: ${({ theme }) => theme.blueThree};
@@ -12,8 +9,26 @@ export const AdmContainer = styled.section`
     font-size: 2.1rem;
   }
 
+  .row__adm {
+    background: ${({ theme }) => theme.blueThree};
+  }
+
+  .rowbottom__adm {
+    background: ${({ theme }) => theme.blueThree};
+  }
+
+  .BottomInfos__col1, .BottomInfos__col2 {
+    span {
+      color: ${({ theme }) => theme.blueThree};
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
   .class_info_bottom {
-    
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto 5rem;
     display: flex;
 
     .class__container__info {

@@ -1,18 +1,18 @@
 import React from 'react'
 import TitleClass from '../titleClass'
 
-import fmcLogo from '../../assets/fmc-logo.jpg'
-import { FmcContainer } from './style'
+import logLogo from '../../assets/log-logo.jpg'
+import { LogContainer } from './style'
 
 function Log() {
   return (
-    <FmcContainer>
+    <LogContainer>
       <TitleClass
-        title="Atendente de Farmácia"
-        imageUrl={fmcLogo}
-        classCss="title__fmc"
+        title="Logística Completa"
+        imageUrl={logLogo}
+        classCss="title__log"
       />
-    </FmcContainer>
+    </LogContainer>
   )
 }
 

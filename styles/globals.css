@@ -23,3 +23,33 @@ ul, li {
 h1, h2, h3, h4, h5, p {
   margin: 0;
 }
+
+.ClassBottomInfos {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.ClassBottomInfos_cont {
+  display: flex;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.1rem 0;
+}
+.BottomInfos__col1, .BottomInfos__col2 {
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BottomInfos__col1 p, .BottomInfos__col2 p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.BottomInfos__col1 ul, .BottomInfos__col2 ul {
+  font-family: 'Merriweather', serif;  
+}
+.BottomInfos__col1 li, .BottomInfos__col2 li {
+  margin-bottom: 1rem;
+}
