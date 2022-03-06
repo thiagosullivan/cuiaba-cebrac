@@ -19,8 +19,17 @@ export const FormContainer = styled.form`
   
   width: 100%;
   max-width: 600px;
-  padding: 3rem;
+  padding: 1rem 3rem;
   background: ${({ theme }) => theme.blueTwo};
+
+  p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
   input {
     height: 50px;

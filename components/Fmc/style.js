@@ -1,12 +1,28 @@
 import styled from "styled-components";
 
-
 export const FmcContainer = styled.section`
+  font-family: 'Work Sans', sans-serif;
 
   .title__fmc {
     color: ${({ theme }) => theme.greenOne};
     text-transform: uppercase;
     font-size: 2.1rem;
+  }
+
+  .row__fmc {
+    background: ${({ theme }) => theme.greenOne};
+  }
+
+  .rowbottom__fmc {
+    background: ${({ theme }) => theme.greenOne};
+  }
+
+  .BottomInfos__col1, .BottomInfos__col2 {
+    span {
+      color: ${({ theme }) => theme.greenOne};
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
 
   .class_info_bottom {
@@ -40,11 +56,11 @@ export const FmcContainer = styled.section`
         }
       }
 
-      .subtitle__adm {
+      .subtitle__fmc {
         margin-bottom: 3.1rem;
 
         h3 {
-          color: ${({ theme }) => theme.blueThree};
+          color: ${({ theme }) => theme.greenOne};
           text-transform: uppercase;
           margin-bottom: 0.6rem;
         }
@@ -71,7 +87,7 @@ export const AsideClass = styled.aside`
     line-height: 1.5;
 
     span {
-      color: ${({ theme }) => theme.blueThree};
+      color: ${({ theme }) => theme.greenOne};
       text-transform: uppercase;
     }
   }

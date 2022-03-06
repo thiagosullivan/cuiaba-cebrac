@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image';
 
 import TitleClass from '../titleClass'
-import { fmcData } from './fmc-data';
+import { fmcData, classBottomInfos_fmc_col1, classBottomInfos_fmc_col2 } from './fmc-data';
 
 import fmcLogo from '../../assets/fmc-logo.jpg'
 import { AsideClass, AsideImage, FmcContainer } from './style'
 import RowClass from '../rowClass';
+import RowClassBottom from '../rowClassBottom';
 
 function Fmc() {
   return (
@@ -24,10 +25,10 @@ function Fmc() {
             <p>Conheça mais <span>sobre o curso</span></p>
             <p>Com o CEBRAC no currículo é assim: você mais perto do mercado de trabalho e da realização dos seus sonhos. O CEBRAC conta com educadores especializados e uma metodologia de ensino diferenciada, garantindo uma formação pessoal e profissional de qualidade.</p>
           </AsideImage>
-          <iframe width="500" height="315" src="https://www.youtube.com/embed/NUmMznITN8A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe width="500" height="315" src="https://www.youtube.com/embed/pwN0WhCLuFM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </AsideClass>
         <div className='class__container__info'>
-          <div className='subtitle__adm'>
+          <div className='subtitle__fmc'>
             <h3>Conteúdo do curso</h3>
             <p>Todos os Cursos CEBRAC têm como foco a Formação Empreendedora do aluno com ferramentas interdisciplinares, Oficinas, Desenvolvimento da Criatividade e da Liderança no Meio Social.</p>
           </div>
@@ -51,11 +52,68 @@ function Fmc() {
         </div>
       </div>
       <RowClass
-        classCss="row__adm"
+        classCss="row__fmc"
       />
       <div className='ClassBottomInfos'>
-        bottom infos
+        <div className='ClassBottomInfos_cont'>
+          {classBottomInfos_fmc_col1.map((data, index) => {
+            return (
+              <div className='BottomInfos__col1' key={index}>
+                <div className='BottomInfos__col1_img'>
+                  <Image
+                    src={data.itemIcon}
+                    width={120}
+                    height={100}
+                  />
+                </div>
+                <p>Incado <span>para</span></p>
+                <ul>
+                  <li>- {data.itemTextOne}</li>
+                  <li>- {data.itemTextTwo}</li>
+                  <li>- {data.itemTextThree}</li>
+                  <li>- {data.itemTextFour}</li>
+                  <li>- {data.itemTextFive}</li>
+                </ul>
+              </div>
+            )
+          })}
+          {classBottomInfos_fmc_col2.map((data, index) => {
+            return (
+              <div className='BottomInfos__col2' key={index}>
+                <div className='BottomInfos__col2_img'>
+                  <Image
+                    src={data.itemIconTwo}
+                    width={120}
+                    height={100}
+                  />
+                </div>
+                <p>Grandes <span>diferenciais</span></p>
+                <ul>
+                  <li>- {data.itemTwoTextOne}</li>
+                  <li>- {data.itemTwoTextTwo}</li>
+                  <li>- {data.itemTwoTextThree}</li>
+                  <li>- {data.itemTwoTextFour}</li>
+                  <li>- {data.itemTwoTextFive}</li>
+                  <li>- {data.itemTwoTextSix}</li>
+                  <li>- {data.itemTwoTextSeven}</li>
+                  <li>- {data.itemTwoTextEight}</li>
+                </ul>
+              </div>
+            )
+          })}
+        </div>
       </div>
+      <RowClassBottom
+        classCss="rowbottom__fmc"
+        imageOneRow="https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/clock-white.png"
+        imageTwoRow="https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/work-white-1.png"
+        imageThreeRow="https://raw.githubusercontent.com/thiagosullivan/cuiaba-cebrac/main/assets/shield-white.png"
+        colOneTxt="180 Horas"
+        colTwoTxtOne="Aprimore-se"
+        colTwoTxtTwo="Facilidades para fazer o seu curso, fortalecendo o aprendizado escolar e sua vida profissional."
+        colThreeTxtOne="Diferenciais"
+        colThreeTxtTwo="Aulas práticas com início imediato. Aulas presenciais com educador. Certificado com reconhecimento."
+      />
     </FmcContainer>
   )
 }
