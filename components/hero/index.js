@@ -12,6 +12,7 @@ function HeroSection() {
       <div className='banner__hero_img'>
         <Image
           src={bannerHero}
+          alt="banner"
         />
       </div>
       <FormHero />

@@ -40,6 +40,7 @@ function Fmc() {
                     src={data.itemIcon}
                     width={75}
                     height={75}
+                    alt="Icone FMC"
                   />
                 </div>
                 <div className='class__infos_txt'>
@@ -64,6 +65,7 @@ function Fmc() {
                     src={data.itemIcon}
                     width={120}
                     height={100}
+                    alt="Icone FMC"
                   />
                 </div>
                 <p>Incado <span>para</span></p>
@@ -85,6 +87,7 @@ function Fmc() {
                     src={data.itemIconTwo}
                     width={120}
                     height={100}
+                    alt="Icone"
                   />
                 </div>
                 <p>Grandes <span>diferenciais</span></p>

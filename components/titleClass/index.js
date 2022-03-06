@@ -11,6 +11,7 @@ function TitleClass({title, imageUrl, classCss}) {
           src={imageUrl}
           width={100}
           height={100}
+          alt="Icone"
         />
       </div>
       <h2 className={classCss}>{title}</h2>

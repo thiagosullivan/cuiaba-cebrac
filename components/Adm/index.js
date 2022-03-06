@@ -43,6 +43,7 @@ function Adm() {
                     src={data.itemIcon}
                     width={75}
                     height={75}
+                    alt="Icone"
                   />
                 </div>
                 <div className='class__infos_txt'>
@@ -67,6 +68,7 @@ function Adm() {
                     src={data.itemIcon}
                     width={120}
                     height={100}
+                    alt="Icone ADM"
                   />
                 </div>
                 <p>Incado <span>para</span></p>
@@ -88,6 +90,7 @@ function Adm() {
                     src={data.itemIconTwo}
                     width={120}
                     height={100}
+                    alt="Icone ADM"
                   />
                 </div>
                 <p>Grandes <span>diferenciais</span></p>

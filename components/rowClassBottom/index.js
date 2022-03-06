@@ -12,6 +12,7 @@ function RowClassBottom({classCss, imageOneRow, imageTwoRow, imageThreeRow, colO
             src={imageOneRow}
             width={90}
             height={90}
+            alt="Icone"
           />
           <p>{colOneTxt}</p>          
         </div>
@@ -20,6 +21,7 @@ function RowClassBottom({classCss, imageOneRow, imageTwoRow, imageThreeRow, colO
             src={imageTwoRow}
             width={90}
             height={90}
+            alt="Icone"
           />
           <div>
             <p>{colTwoTxtOne}</p>
@@ -31,6 +33,7 @@ function RowClassBottom({classCss, imageOneRow, imageTwoRow, imageThreeRow, colO
             src={imageThreeRow}
             width={90}
             height={90}
+            alt="Icone"
           />
           <div>
             <p>{colThreeTxtOne}</p>

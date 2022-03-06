@@ -16,6 +16,7 @@ function Header() {
             src={mtFlag}
             width={30}
             height={20}
+            alt="Icone"
           />
         </div>
         <p>Cuiabá - MT</p>
@@ -26,6 +27,7 @@ function Header() {
             src={headLogo}
             width={145}
             height={40}
+            alt="Icone"
           />
         </div>
         <NavHeader />

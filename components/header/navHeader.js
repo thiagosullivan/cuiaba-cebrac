@@ -1,12 +1,16 @@
+import Link from 'next/link'
 import React from 'react'
 import { NavHead } from './style'
+
 
 function NavHeader() {
   return (
     <NavHead>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
         <li>
           <a href="#adm">Assistente<br/>Administrativo</a>
