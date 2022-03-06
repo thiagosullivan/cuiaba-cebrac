@@ -37,6 +37,21 @@ export const FormContainer = styled.form`
     }
   }
 
+  select {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid ${({ theme }) => theme.grayOne};
+    margin: .5rem 0;
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 1rem;
+    color: ${({ theme }) => theme.grayTwo};
+    outline: none;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.grayTwo};
+    }
+  }
+
   button {
     height: 50px;
     color: ${({ theme }) => theme.blueTwo};

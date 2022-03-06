@@ -6,28 +6,28 @@ function NavHeader() {
     <NavHead>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#">Assistente<br/>Administrativo</a>
+          <a href="#adm">Assistente<br/>Administrativo</a>
         </li>
         <li>
-          <a href="#">Atendente de<br/>Farmácia</a>
+          <a href="#fmc">Atendente de<br/>Farmácia</a>
         </li>
         <li>
-          <a href="#">Cebrac<br/>English</a>
+          <a href="#eng">Cebrac<br/>English</a>
         </li>
         <li>
-          <a href="#">Cuidador</a>
+          <a href="#cdd">Cuidador</a>
         </li>
         <li>
-          <a href="#">Logística</a>
+          <a href="#log">Logística</a>
         </li>
         <li>
-          <a href="">Manutenção de Celulares e<br/>Computadores</a>
+          <a href="#mcc">Manutenção de Celulares e<br/>Computadores</a>
         </li>
         <li>
-          <a href="">Profissional de<br/>Beleza</a>
+          <a href="#pbb">Profissional de<br/>Beleza</a>
         </li>
       </ul>
     </NavHead>
