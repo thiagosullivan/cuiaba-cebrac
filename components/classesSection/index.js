@@ -17,7 +17,7 @@ function ClassesSection() {
       <Cdd />
       <Log />
       <Mcc />
-      {/* <Pbb /> */}
+      <Pbb />
     </ClassesContainer>
   )
 }

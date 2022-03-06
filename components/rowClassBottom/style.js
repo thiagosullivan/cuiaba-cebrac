@@ -22,7 +22,7 @@ export const RowClassBottomContainer = styled.div`
         color: #ffffff;
         margin-left: 1rem;
         font-weight: bold;
-        max-width: 120px;
+        max-width: 130px;
       }
     }
     .row_class_bottom_col2,
