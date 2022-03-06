@@ -5,6 +5,7 @@ import HeroSection from '../components/heroSection'
 import RowSection from '../components/rowSection'
 import ClassesSection from '../components/classesSection'
 import RatingSection from '../components/rating'
+import FooterSection from '../components/footer'
 
 export default function Home() {
   return (
@@ -23,8 +24,7 @@ export default function Home() {
         <RatingSection />
       </main>
 
-      <footer>
-      </footer>
+      <FooterSection />
     </div>
   )
 }

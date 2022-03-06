@@ -7,7 +7,7 @@ export const RatingSectionContainer = styled.section`
     margin-bottom: 5rem;
 
     h2 {
-      color: ${({ theme }) => theme.blueTwo};
+      color: ${({ theme }) => theme.blueOne};
       text-transform: uppercase;
       font-size: 2.1rem;
       text-align: center;
@@ -39,7 +39,7 @@ export const CardsRatingContainer = styled.div`
   border-radius: 5px;
 
   h4 {
-    color: ${({ theme }) => theme.blueTwo};
+    color: ${({ theme }) => theme.blueOne};
     margin: .5rem 0 .2rem;
   }
   span {
