@@ -11,7 +11,10 @@ const theme = {
   greenTwo: '#A9CE46',
   greenThree: '#46C2BC',
   redOne: '#FF0036',
-  pinkOne: '#D95B8F'
+  pinkOne: '#D95B8F',
+  error: '#FF2E2E',
+  sucess: '#43c900',
+  white: '#FFFFFF'
 }
 
 export default theme;

@@ -8,8 +8,24 @@ export const HeroContainer = styled.section`
 
   .banner__hero_img {
     max-width: 1260px;
-    min-width: 750px;
+    min-width: 850px;
     width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    .banner__hero_img {
+      min-width: 750px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .banner__hero_img {
+      min-width: 660px;
+    }
+  }
+
+  @media (max-width: 980px) {
+    flex-direction: column;
   }
 `
 
@@ -21,6 +37,41 @@ export const FormContainer = styled.form`
   max-width: 600px;
   padding: 1rem 3rem;
   background: ${({ theme }) => theme.blueTwo};
+  position: relative;
+
+  .disabled-btn {
+    cursor: not-allowed;    
+  }
+  .disabled-input {
+    pointer-events: none !important;
+  }
+
+  @media (max-width: 1650px) {
+    max-width: 550px;
+  }
+
+  @media (max-width: 1500px) {
+    max-width: 500px;
+    padding: 1rem 2rem;
+  }
+
+  @media (max-width: 1400px) {
+    max-width: 450px;
+    padding: 1rem;
+  }
+
+  @media (max-width: 1300px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 1100px) {
+    max-width: 325px;
+  }
+
+  @media (max-width: 980px) {
+    max-width: 700px;
+    padding: 3rem 1rem;
+  }
 
   p {
     color: #ffffff;
