@@ -3,7 +3,7 @@ import React from 'react'
 import { NavHead } from './style'
 
 
-function NavHeader() {
+function NavHeaderDesktop() {
   return (
     <NavHead>
       <ul>
@@ -38,4 +38,4 @@ function NavHeader() {
   )
 }
 
-export default NavHeader
+export default NavHeaderDesktop

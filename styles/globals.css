@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -52,4 +53,9 @@ h1, h2, h3, h4, h5, p {
 }
 .BottomInfos__col1 li, .BottomInfos__col2 li {
   margin-bottom: 1rem;
+}
+
+.is-sticky {
+  position: fixed;
+  top: 0;
 }

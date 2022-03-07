@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   margin-bottom: 3rem;
+  font-family: 'Work Sans', sans-serif;
+  
+  .header_mobile_active {
+    display: block;
+    height: 100vh;
+    visibility: visible;
+    position: fixed;
+  }
 `
 export const TopHead = styled.div`
 
@@ -32,6 +40,8 @@ export const BottomHead = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   padding: .5rem 1rem;
+  background-color: #ffffff;
+  z-index: 2;
 
   border-top: 1px solid ${({ theme }) => theme.blueOne};
   border-bottom: 1px solid ${({ theme }) => theme.blueOne};
@@ -56,4 +66,60 @@ export const NavHead = styled.nav`
     }
   }
 
+  @media (max-width: 980px) {
+    display: none;
+  }
+
+`
+
+export const NavHeadMobile = styled.div`
+  /* position: relative; */
+  max-width: 320px;
+
+  @media (min-width: 980px) {
+    display: none;
+  }
+
+  .menu__mobile_ham {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+  }
+`
+
+export const NavHeadMobileCont = styled.nav`
+  display: block;
+  position: absolute;
+  z-index: 90;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.20);
+  width: 100%;
+  height: 0;
+  color: ${({ theme }) => theme.blueOne};
+  visibility: hidden;
+  transition: 0.6s;
+  overflow-y: hidden;
+
+  .close_header_mobile {
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+    position: absolute;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+    li {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
 `
