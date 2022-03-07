@@ -32,19 +32,25 @@ export const TopHead = styled.div`
 `
 
 export const BottomHead = styled.div`
-
-  display: flex;
-  align-items: center;
-  max-width: 1300px;
-  width: 100%;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: .5rem 1rem;
   background-color: #ffffff;
   z-index: 2;
+  width: 100%;
 
-  border-top: 1px solid ${({ theme }) => theme.blueOne};
-  border-bottom: 1px solid ${({ theme }) => theme.blueOne};
+  .bottom__header__cont {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    border-top: 1px solid ${({ theme }) => theme.blueOne};
+    border-bottom: 1px solid ${({ theme }) => theme.blueOne};
+  } 
+
+  .header__logo {
+    cursor: pointer;
+  }
 `
 
 export const NavHead = styled.nav`

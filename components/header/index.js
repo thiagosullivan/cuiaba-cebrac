@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import Image from 'next/image';
+import Link from 'next/link'
 
 import { BottomHead, HeaderContainer, TopHead } from './style';
 import NavHeader from './navHeader';
@@ -40,16 +41,20 @@ function Header() {
       <BottomHead
         id='bottom__header'
       >
-        <div className='header__logo'>
-          <Image
-            src={headLogo}
-            width={145}
-            height={40}
-            alt="Icone"
-          />
+        <div className='bottom__header__cont'>
+          <div className='header__logo'>
+            <Link href="/">
+              <Image
+                src={headLogo}
+                width={145}
+                height={40}
+                alt="Icone"
+              />
+            </Link>
+          </div>
+          <NavHeaderDesktop />
+          <NavHeaderMobile />
         </div>
-        <NavHeaderDesktop />
-        <NavHeaderMobile />
       </BottomHead>
     </HeaderContainer>
   )
