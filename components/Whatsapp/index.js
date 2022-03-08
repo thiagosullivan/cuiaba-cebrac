@@ -12,6 +12,7 @@ function Whatsapp() {
         data-auto-text="CHAME AGORA!"
         data-ga-label="Cebrac Cuiaba"
         target="_blank"
+        rel="noreferrer"
       >
         <Image
           src={WhatsappLogo}
