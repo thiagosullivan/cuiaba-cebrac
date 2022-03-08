@@ -4,6 +4,10 @@ export const HeaderContainer = styled.header`
   margin-bottom: 3rem;
   font-family: 'Work Sans', sans-serif;
   
+  @media (max-width: 550px){
+    margin-bottom: 1rem;
+  }
+  
   .header_mobile_active {
     display: block;
     height: 100vh;

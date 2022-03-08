@@ -6,6 +6,7 @@ import RowSection from '../components/rowSection'
 import ClassesSection from '../components/classesSection'
 import RatingSection from '../components/rating'
 import FooterSection from '../components/footer'
+import Whatsapp from '../components/Whatsapp'
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
         <ClassesSection />
         <RatingSection />
       </main>
-
+      <Whatsapp />
       <FooterSection />
     </div>
   )

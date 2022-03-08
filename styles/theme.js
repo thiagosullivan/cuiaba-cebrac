@@ -14,7 +14,8 @@ const theme = {
   pinkOne: '#D95B8F',
   error: '#FF2E2E',
   sucess: '#43c900',
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  whatsapp: '#00C954',
 }
 
 export default theme;

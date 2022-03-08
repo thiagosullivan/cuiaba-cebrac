@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import Header from '../components/header'
 import FooterSection from '../components/footer'
+import Whatsapp from '../components/Whatsapp'
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
           <a>Voltar para a Home</a>
         </Link>
       </main>
-
+      <Whatsapp />
       <FooterSection />
     </div>
   )
