@@ -4,7 +4,9 @@ export const RatingSectionContainer = styled.section`
   font-family: 'Work Sans', sans-serif;
 
   .rating__title {
+    margin-top: 6.2rem;
     margin-bottom: 5rem;
+    padding: 0 1rem;
 
     h2 {
       color: ${({ theme }) => theme.blueOne};
@@ -25,7 +27,9 @@ export const RatingSectionContainer = styled.section`
     width: 100%;
     margin: 0 auto 5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 1rem;
   }
 `
 
@@ -37,6 +41,7 @@ export const CardsRatingContainer = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  margin: 1rem;
 
   h4 {
     color: ${({ theme }) => theme.blueOne};

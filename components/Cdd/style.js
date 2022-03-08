@@ -30,9 +30,23 @@ export const CddContainer = styled.section`
     width: 100%;
     margin: 0 auto 5rem;
     display: flex;
+    padding: 0 1rem;
+
+    @media (max-width: 980px){
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+    }
 
     .class__container__info {
-      
+
+      @media (max-width: 980px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+      }
+
       .class__container__info__content {
   
         display: flex;
@@ -46,6 +60,19 @@ export const CddContainer = styled.section`
           position: relative;
           margin-right: 1.6rem;
         }
+
+        @media (max-width: 550px){
+          flex-direction: column;
+
+          h4 {
+            text-align: center;
+          }
+
+          .class_desc_icon {            
+            margin-right: 0 !important;
+            margin-bottom: 1rem;
+          }
+        }
   
         h4 {
           margin-bottom: 0.6rem;
@@ -54,6 +81,19 @@ export const CddContainer = styled.section`
         p {
           max-width: 620px;
           text-align: justify;
+        }
+      }
+
+      @media (max-width: 550px){
+        flex-direction: column;
+
+        h4 {
+          text-align: center;
+        }
+
+        .class_desc_icon {            
+          margin-right: 0 !important;
+          margin-bottom: 1rem;
         }
       }
 
@@ -91,6 +131,36 @@ export const AsideClass = styled.aside`
       color: ${({ theme }) => theme.greenTwo};
       text-transform: uppercase;
     }
+
+    @media (max-width: 550px){
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    margin-right: 1.8rem;
+  }
+
+  @media (max-width: 980px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    max-width: 980px;
+    width: 100%;
+  }
+
+  .class_iframe_mobile {
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    .class_iframe {
+      display: none;
+    }
+    .class_iframe_mobile {
+      display: block;
+    }
   }
 `
 
@@ -98,4 +168,13 @@ export const AsideImage = styled.div`
   padding: 3.75rem;
   background-image: url(${props => props.imgUrl});
   margin-bottom: 3.1rem;
+
+  @media (max-width: 980px) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 550px){
+    padding: 2rem;
+  }
 `

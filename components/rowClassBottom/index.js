@@ -8,33 +8,39 @@ function RowClassBottom({classCss, imageOneRow, imageTwoRow, imageThreeRow, colO
     <RowClassBottomContainer className={classCss}>
       <div className='row_class_bottom_cont'>
         <div className='row_class_bottom_col1'>
-          <Image
-            src={imageOneRow}
-            width={90}
-            height={90}
-            alt="Icone"
-          />
+          <div className='row_class_img'>
+            <Image
+              src={imageOneRow}
+              width={90}
+              height={90}
+              alt="Icone"          
+            />
+          </div>
           <p>{colOneTxt}</p>          
         </div>
         <div className='row_class_bottom_col2'>
-          <Image
-            src={imageTwoRow}
-            width={90}
-            height={90}
-            alt="Icone"
-          />
+          <div className='row_class_img'>
+            <Image
+              src={imageTwoRow}
+              width={90}
+              height={90}
+              alt="Icone"
+            />
+          </div>
           <div>
             <p>{colTwoTxtOne}</p>
             <p>{colTwoTxtTwo}</p>
           </div>
         </div>
         <div className='row_class_bottom_col3'>
-          <Image
-            src={imageThreeRow}
-            width={90}
-            height={90}
-            alt="Icone"
-          />
+          <div className='row_class_img'>
+            <Image
+              src={imageThreeRow}
+              width={90}
+              height={90}
+              alt="Icone"
+            />
+          </div>
           <div>
             <p>{colThreeTxtOne}</p>
             <p>{colThreeTxtTwo}</p>

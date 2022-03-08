@@ -13,7 +13,7 @@ export const FooterTop = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 
   .footer__logo {
     cursor: pointer;
@@ -43,6 +43,24 @@ export const FooterTop = styled.div`
     }
   }
 
+
+  @media (max-width: 710px){
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      margin: 1.5rem 0;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    li {
+      text-align: center;
+    }
+  }
+
   .footer__social_container {
 
     .footer__social_links{
@@ -68,5 +86,9 @@ export const FooterBottom = styled.div`
   
   span {
     font-weight: bold;
+  }
+
+  @media (max-width: 420px){
+    font-size: 0.9rem;
   }
 `

@@ -12,11 +12,29 @@ export const RowClassContainer = styled.div`
     justify-content: center;
     font-family: 'Work Sans', sans-serif;
 
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+
     p {
       margin-right: 6rem;
       font-size: 2.1rem;
       color: #ffffff;
       font-weight: bold;
+
+      @media (max-width: 980px) {
+        margin-right: 2rem;
+      }
+
+      @media (max-width: 850px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 850px) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
     }
 
     a {
@@ -29,6 +47,10 @@ export const RowClassContainer = styled.div`
       &:hover {
         background-color: transparent;
         color: ${({ theme }) => theme.blackOne};
+      }
+
+      @media (max-width: 850px) {
+        padding: 0.6rem 2rem;
       }
     }
   }
