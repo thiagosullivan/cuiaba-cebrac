@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import bannerHero from '../../assets/banner-1.5.jpg';
+import bannerHero from '../../assets/banner-1.webp';
 
 
 import { HeroContainer } from './style';
