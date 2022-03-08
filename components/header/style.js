@@ -121,7 +121,7 @@ export const NavHeadMobileCont = styled.nav`
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: calc(100vh - 16px);
 
     li {
       font-size: 1.2rem;
