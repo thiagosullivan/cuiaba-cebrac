@@ -1,11 +1,12 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Header from '../components/header'
 import FooterSection from '../components/footer'
 
 export default function Home() {
   return (
-    <div>
+    <div id="thanks__cont">
       <Head>
         <title>Obrigado! | Cuiabá Cebrac</title>
         <link rel="icon" href="/favicon.ico" />
@@ -32,6 +33,10 @@ export default function Home() {
       <Header />
       <main>
         <h1>Obrigado!</h1>
+        <p>Agradecemos o contato e responderemos o mais breve possível.</p>
+        <Link href="/">
+          <a>Voltar para a Home</a>
+        </Link>
       </main>
 
       <FooterSection />

@@ -11,10 +11,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Cuiabá Cebrac</title>
-        <link rel="icon" href="/favicon.ico" />
-        {/* Primary Meta Tags */}
         <title>Cebrac Unidade de Cuiabá</title>
+        <link rel="icon" href="/favicon.ico" />
+        {/* Primary Meta Tags */}        
         <meta name="title" content="Cebrac Unidade de Cuiabá" />
         <meta name="description" content="Cursos Unidade Cuiabá. Prepare-se para o mercado de trabalho com os melhores cursos profissionalizantes do Brasil em 7 áreas de atuação!" />
 
