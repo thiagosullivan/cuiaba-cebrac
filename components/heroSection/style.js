@@ -106,6 +106,7 @@ export const FormContainer = styled.form`
     padding-left: 1rem;
     color: ${({ theme }) => theme.grayTwo};
     outline: none;
+    background-color: ${({ theme }) => theme.white};
 
     &::placeholder {
       color: ${({ theme }) => theme.grayTwo};
