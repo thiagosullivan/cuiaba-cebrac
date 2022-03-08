@@ -54,8 +54,8 @@ function FormHero() {
         }
       });
     } finally {
-      setLoading(false)
       router.push('/obrigado')
+      setLoading(false)
     }
   }
 
@@ -68,7 +68,6 @@ function FormHero() {
       <p>Cadastre-se para mais informações</p>
       <input
         type="text"
-        required
         placeholder="Seu Nome"
         onChange={({target}) => setNome(target.value)}
         value={nome}
@@ -85,7 +84,6 @@ function FormHero() {
       <MaskedInput
         mask="(99) 99999-9999"
         type="phone"
-        required
         placeholder="Seu Telefone"
         onChange={({target}) => setPhone(target.value)}
         value={phone}
