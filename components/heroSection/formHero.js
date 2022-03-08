@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { useRouter } from 'next/router';
-
 import toast from 'react-hot-toast';
+import MaskedInput  from 'react-input-mask';
+
 import { sendContactMail } from '../../services/sendMail';
 import LoadingSpinner from '../LoadingSpinner';
 
@@ -73,7 +74,16 @@ function FormHero() {
         value={nome}
         className={`${loading ? "disabled-input" : ""}`}
       />
-      <input
+      {/* <input
+        type="phone"
+        required
+        placeholder="Seu Telefone"
+        onChange={({target}) => setPhone(target.value)}
+        value={phone}
+        className={`${loading ? "disabled-input" : ""}`}
+      /> */}
+      <MaskedInput
+        mask="(99) 99999-9999"
         type="phone"
         required
         placeholder="Seu Telefone"
