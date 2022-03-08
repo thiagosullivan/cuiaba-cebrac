@@ -27,6 +27,12 @@ export const HeroContainer = styled.section`
   @media (max-width: 980px) {
     flex-direction: column;
   }
+
+  @media (max-width: 550px) {
+    .banner__hero_img {
+      min-width: 600px;
+    }
+  }
 `
 
 export const FormContainer = styled.form`
@@ -80,6 +86,10 @@ export const FormContainer = styled.form`
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1rem;
+
+    @media (max-width: 550px){
+      font-size: 1.5rem;
+    }
   }
 
   input {
