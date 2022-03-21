@@ -13,11 +13,12 @@ function FooterSection() {
       <div className='footer__content'>
         <FooterTop>
           <div className="footer__logo">
-            <Link href="/">
+            <Link href="/" passHref>
               <Image
                 src={logoFooter}
                 width={215}
                 height={60}
+                alt="Cuiabá Cebrac"
               />
             </Link>
           </div>

@@ -43,7 +43,7 @@ function Header() {
       >
         <div className='bottom__header__cont'>
           <div className='header__logo'>
-            <Link href="/">
+            <Link href="/" passHref>
               <Image
                 src={headLogo}
                 width={145}

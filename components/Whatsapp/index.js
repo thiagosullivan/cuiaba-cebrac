@@ -18,6 +18,7 @@ function Whatsapp() {
           src={WhatsappLogo}
           width={50}
           height={50}
+          alt="Whatsapp"
         />
       </a>
     </WhatsappContainer>
