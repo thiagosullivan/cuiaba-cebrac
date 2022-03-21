@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { google } from 'googleapis';
 
 const { OAuth2 } = google.auth;
-
+ 
 const email = process.env.MAILADDRESS;
 
 const clientId = process.env.CLIENT_ID;
