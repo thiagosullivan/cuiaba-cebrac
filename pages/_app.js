@@ -4,8 +4,8 @@ import { Toaster } from 'react-hot-toast';
 import '../styles/globals.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import * as gtag from './../lib/gtag';
-import Analytics from './../components/analytics';
+// import * as gtag from './../lib/gtag';
+// import Analytics from './../components/analytics';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
@@ -13,15 +13,15 @@ function MyApp({ Component, pageProps }) {
 
   // const FB_PIXEL = process.env.PIXEL_FB;
 
-  useEffect(() => {
-    const handleRouteChange = url => {
-      gtag.pageview(url)
-    }
-    router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
+  // useEffect(() => {
+  //   const handleRouteChange = url => {
+  //     gtag.pageview(url)
+  //   }
+  //   router.events.on('routeChangeComplete', handleRouteChange)
+  //   return () => {
+  //     router.events.off('routeChangeComplete', handleRouteChange)
+  //   }
+  // }, [router.events])
 
   // useEffect(async () => {
   //   const { default: ReactPixel } = await import('react-facebook-pixel');
@@ -49,11 +49,29 @@ function MyApp({ Component, pageProps }) {
           fbq('track', 'PageView');
         `}
       </Script>
+      <script async src=""></script>
+      <Script
+        strategy='lazyOnload'
+        id='GA-scriptOne'
+        src={`https://www.googletagmanager.com/gtag/js?id=AW-643544744`}
+      />
+      <Script
+        strategy='lazyOnload'
+        id='GA-scriptTwo'
+      >
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+  
+          gtag('config', 'AW-643544744');
+        `}
+      </Script>
       <ThemeProvider theme={theme}>
         <Toaster position="bottom-right" />
         <Component {...pageProps} />    
       </ThemeProvider>
-      <Analytics />
+      {/* <Analytics /> */}
     </>
   )
 }
