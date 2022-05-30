@@ -11,6 +11,7 @@ const Analytics = () => (
     </Script>
     <Script
       strategy="afterInteractive"
+      id="ga-second-script"
       dangerouslySetInnerHTML={{
         __html: `
             window.dataLayer = window.dataLayer || [];
