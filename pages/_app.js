@@ -2,32 +2,44 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 import { Toaster } from 'react-hot-toast';
 import '../styles/globals.css';
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-
-const FB_PIXEL_ID = process.env.REFRESH_TOKEN;
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import * as gtag from './../lib/gtag';
+import Analytics from './../components/analytics';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
-  useEffect(() => {
-    import('react-facebook-pixel')
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.init(FB_PIXEL_ID) // facebookPixelId
-        ReactPixel.pageView()
+  const FB_PIXEL = process.env.PIXEL_FB;
 
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView()
-        })
-      })
+  useEffect(() => {
+    const handleRouteChange = url => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
   }, [router.events])
 
+  useEffect(async () => {
+    const { default: ReactPixel } = await import('react-facebook-pixel');
+    ReactPixel.init(FB_PIXEL, null, {
+        autoConfig: true,
+        debug: true,
+      });
+    ReactPixel.pageView();
+    ReactPixel.track("ViewContent")
+  });
+
   return (
-    <ThemeProvider theme={theme}>
-      <Toaster position="bottom-right" />
-      <Component {...pageProps} />    
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        <Toaster position="bottom-right" />
+        <Component {...pageProps} />    
+      </ThemeProvider>
+      <Analytics />
+    </>
   )
 }
 
