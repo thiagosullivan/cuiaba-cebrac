@@ -5,11 +5,9 @@ const Analytics = () => (
   <>
     <Script
       strategy="afterInteractive"
-      id="gtm-script"
+      id="ga-script"
     >
-      {
-        `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`
-      }
+      {`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
     </Script>
     <Script
       strategy="afterInteractive"
