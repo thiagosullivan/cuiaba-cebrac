@@ -11,7 +11,8 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
-  // const FB_PIXEL = process.env.PIXEL_FB;
+  const FB_PIXEL = process.env.PIXEL_FB;
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
   // useEffect(() => {
   //   const handleRouteChange = url => {
@@ -45,7 +46,7 @@ function MyApp({ Component, pageProps }) {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '557013655243129');
+          fbq('init', '${FB_PIXEL}');
           fbq('track', 'PageView');
         `}
       </Script>
@@ -53,7 +54,7 @@ function MyApp({ Component, pageProps }) {
       <Script
         strategy='lazyOnload'
         id='GA-scriptOne'
-        src={`https://www.googletagmanager.com/gtag/js?id=AW-643544744`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
       />
       <Script
         strategy='lazyOnload'
@@ -64,7 +65,7 @@ function MyApp({ Component, pageProps }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
   
-          gtag('config', 'AW-643544744');
+          gtag('config', '${GA_ID}');
         `}
       </Script>
       <ThemeProvider theme={theme}>
