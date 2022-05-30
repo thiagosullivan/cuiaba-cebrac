@@ -4,8 +4,6 @@ import { Toaster } from 'react-hot-toast';
 import '../styles/globals.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-// import * as gtag from './../lib/gtag';
-// import Analytics from './../components/analytics';
 import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
@@ -13,26 +11,6 @@ function MyApp({ Component, pageProps }) {
 
   const FB_PIXEL = process.env.PIXEL_FB;
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-
-  // useEffect(() => {
-  //   const handleRouteChange = url => {
-  //     gtag.pageview(url)
-  //   }
-  //   router.events.on('routeChangeComplete', handleRouteChange)
-  //   return () => {
-  //     router.events.off('routeChangeComplete', handleRouteChange)
-  //   }
-  // }, [router.events])
-
-  // useEffect(async () => {
-  //   const { default: ReactPixel } = await import('react-facebook-pixel');
-  //   ReactPixel.init(FB_PIXEL, null, {
-  //       autoConfig: true,
-  //       debug: true,
-  //     });
-  //   ReactPixel.pageView();
-  //   ReactPixel.track("ViewContent")
-  // });
 
   return (
     <>
@@ -50,7 +28,6 @@ function MyApp({ Component, pageProps }) {
           fbq('track', 'PageView');
         `}
       </Script>
-      <script async src=""></script>
       <Script
         strategy='lazyOnload'
         id='GA-scriptOne'
@@ -72,7 +49,6 @@ function MyApp({ Component, pageProps }) {
         <Toaster position="bottom-right" />
         <Component {...pageProps} />    
       </ThemeProvider>
-      {/* <Analytics /> */}
     </>
   )
 }
